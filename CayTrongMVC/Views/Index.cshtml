@@ -1,0 +1,93 @@
+﻿@model List<CayTrongMVC.Models.CayTrong>
+
+@{
+    ViewData["Title"] = "Danh sách cây trồng";
+}
+
+<h2>Danh sách cây trồng</h2>
+
+<div class="search-container">
+    <form method="get">
+        <input type="text" name="search" placeholder="Tìm kiếm cây trồng..." />
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+</div>
+
+<div class="grid-container">
+    @foreach (var cay in Model)
+    {
+        <div class="grid-item" onmouseover="showButtons(@cay.Ma)" onmouseout="hideButtons(@cay.Ma)">
+            <h3>@cay.Ten</h3>
+            <p>@cay.MoTa</p>
+            <div id="buttons-@cay.Ma" class="buttons hidden">
+                <a href="#" class="btn btn-edit">Sửa</a>
+                <a href="/Home/Delete?id=@cay.Ma" class="btn btn-delete">Xóa</a>
+            </div>
+        </div>
+    }
+</div>
+
+<style>
+    .search-container {
+        margin-bottom: 20px;
+    }
+
+        .search-container input {
+            padding: 8px;
+            width: 200px;
+        }
+
+        .search-container button {
+            padding: 8px;
+            background-color: green;
+            color: white;
+            border: none;
+        }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+
+    .grid-item {
+        padding: 15px;
+        border: 1px solid #ddd;
+        background: #f4f9f4;
+        position: relative;
+    }
+
+    .buttons {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+
+        .buttons.hidden {
+            display: none;
+        }
+
+    .btn {
+        padding: 5px 10px;
+        text-decoration: none;
+        color: white;
+        border-radius: 3px;
+    }
+
+    .btn-edit {
+        background-color: blue;
+    }
+
+    .btn-delete {
+        background-color: red;
+    }
+</style>
+
+<script>
+    function showButtons(id) {
+    document.getElementById('buttons-' + id).classList.remove('hidden');
+    }
+    function hideButtons(id) {
+    document.getElementById('buttons-' + id).classList.add('hidden');
+    }
+</script>

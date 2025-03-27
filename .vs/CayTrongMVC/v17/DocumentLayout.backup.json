@@ -1,0 +1,72 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\CayTrongMVC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1C25121C-EE68-4C00-A439-7BDFE20A2866}|CayTrongMVC\\CayTrongMVC.csproj|c:\\users\\admin\\source\\repos\\caytrongmvc\\caytrongmvc\\models\\caytrong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C25121C-EE68-4C00-A439-7BDFE20A2866}|CayTrongMVC\\CayTrongMVC.csproj|solutionrelative:caytrongmvc\\models\\caytrong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C25121C-EE68-4C00-A439-7BDFE20A2866}|CayTrongMVC\\CayTrongMVC.csproj|c:\\users\\admin\\source\\repos\\caytrongmvc\\caytrongmvc\\views\\trangchu\\sua.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1C25121C-EE68-4C00-A439-7BDFE20A2866}|CayTrongMVC\\CayTrongMVC.csproj|solutionrelative:caytrongmvc\\views\\trangchu\\sua.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C25121C-EE68-4C00-A439-7BDFE20A2866}|CayTrongMVC\\CayTrongMVC.csproj|c:\\users\\admin\\source\\repos\\caytrongmvc\\caytrongmvc\\views\\taikhoan\\dangnhap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1C25121C-EE68-4C00-A439-7BDFE20A2866}|CayTrongMVC\\CayTrongMVC.csproj|solutionrelative:caytrongmvc\\views\\taikhoan\\dangnhap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DangNhap.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\CayTrongMVC\\CayTrongMVC\\Views\\TaiKhoan\\DangNhap.cshtml",
+              "RelativeDocumentMoniker": "CayTrongMVC\\Views\\TaiKhoan\\DangNhap.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\CayTrongMVC\\CayTrongMVC\\Views\\TaiKhoan\\DangNhap.cshtml",
+              "RelativeToolTip": "CayTrongMVC\\Views\\TaiKhoan\\DangNhap.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-27T14:13:59.044Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CayTrong.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\CayTrongMVC\\CayTrongMVC\\Models\\CayTrong.cs",
+              "RelativeDocumentMoniker": "CayTrongMVC\\Models\\CayTrong.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\CayTrongMVC\\CayTrongMVC\\Models\\CayTrong.cs",
+              "RelativeToolTip": "CayTrongMVC\\Models\\CayTrong.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T16:38:01.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Sua.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\CayTrongMVC\\CayTrongMVC\\Views\\TrangChu\\Sua.cshtml",
+              "RelativeDocumentMoniker": "CayTrongMVC\\Views\\TrangChu\\Sua.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\CayTrongMVC\\CayTrongMVC\\Views\\TrangChu\\Sua.cshtml",
+              "RelativeToolTip": "CayTrongMVC\\Views\\TrangChu\\Sua.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACoAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-27T16:34:24.893Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

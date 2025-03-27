@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Đăng Nhập";
+}
+
+<div class="login-container">
+    <h2>🌿 Đăng Nhập 🌿</h2>
+
+    @if (ViewBag.ThongBao != null)
+    {
+        <div class="alert alert-success">@ViewBag.ThongBao</div>
+    }
+
+    <form method="post" action="@Url.Action("DangNhap", "TaiKhoan")">
+        <div class="form-group">
+            <label for="TenDangNhap">Tên đăng nhập:</label>
+            <input type="text" name="tenDangNhap" class="form-control" required />
+        </div>
+
+        <div class="form-group">
+            <label for="MatKhau">Mật khẩu:</label>
+            <input type="password" name="matKhau" class="form-control" required />
+        </div>
+
+        <div class="button-container">
+            <button type="submit" class="btn btn-success">Đăng Nhập</button>
+            <a href="~/TaiKhoan/DangKy" class="btn btn-primary">Đăng Ký</a>
+        </div>
+    </form>
+</div>
+
+<style>
+    .login-container {
+        background: #658b59;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 7px 6px 11px 3px rgb(0 0 0 / 63%);
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
+        color: #e1e1e1;
+        margin: 50px auto; /* Thêm dòng này để căn giữa theo chiều ngang */
+    }
+
+</style>

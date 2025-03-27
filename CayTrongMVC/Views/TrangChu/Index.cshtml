@@ -1,0 +1,47 @@
+﻿@model List<CayTrongMVC.Models.CayTrong>
+
+@{
+    ViewData["Title"] = "Danh sách cây trồng";
+    var isAdmin = Context.Session.GetString("IsAdmin") == "true";
+}
+
+<h2>🌿 Danh Sách Cây Trồng 🌿</h2>
+
+@if (isAdmin)
+{
+    <div class="add-plant-btn-container" style="text-align: center; margin-bottom: 20px;">
+        <a href="@Url.Action("ThemCay", "TrangChu")" class="btn btn-success">Thêm Cây Trồng Mới</a>
+    </div>
+}
+
+<div class="grid-container">
+    @foreach (var cay in Model)
+    {
+        <div class="grid-item" onmouseover="showButtons(@cay.Ma)" onmouseout="hideButtons(@cay.Ma)">
+            <div class="grid-content">
+                <h3>@cay.Ten</h3>
+            </div>
+
+            <img src="@cay.HinhAnh" alt="@cay.Ten" class="grid-image" />
+
+            <div class="buttons" id="buttons-@cay.Ma" style="display: none;">
+                @if (isAdmin)
+                {
+                    <a href="@Url.Action("Sua", "TrangChu", new { ma = cay.Ma })" class="btn btn-edit">Sửa</a>
+                    <a href="@Url.Action("Xoa", "TrangChu", new { ma = cay.Ma })" class="btn btn-delete">Xóa</a>
+                }
+                <a href="@Url.Action("Chitiet", "TrangChu", new { ma = cay.Ma })" class="btn btn-detail">Chi tiết</a>
+            </div>
+        </div>
+    }
+</div>
+
+<script>
+    function showButtons(id) {
+        document.getElementById('buttons-' + id).style.display = 'flex';
+    }
+
+    function hideButtons(id) {
+        document.getElementById('buttons-' + id).style.display = 'none';
+    }
+</script>

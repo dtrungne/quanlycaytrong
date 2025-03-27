@@ -1,0 +1,47 @@
+﻿@model CayTrongMVC.Models.CayTrong
+
+@{
+    ViewData["Title"] = "Sửa Cây Trồng";
+}
+
+<h2>✏️ Sửa Cây Trồng</h2>
+
+<form method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="Ten">Tên Cây</label>
+        <input type="text" id="Ten" name="Ten" class="form-control" value="@Model.Ten" placeholder="Nhập tên cây..." required />
+        @if (ViewData.ModelState.ContainsKey("Ten") && ViewData.ModelState["Ten"].Errors.Count > 0)
+        {
+            <div class="alert alert-danger">
+                @ViewData.ModelState["Ten"].Errors[0].ErrorMessage
+            </div>
+        }
+    </div>
+
+    <div class="form-group">
+        <label for="MoTa">Mô Tả</label>
+        <textarea id="MoTa" name="MoTa" class="form-control" placeholder="Nhập mô tả về cây..." required>@Model.MoTa</textarea>
+        @if (ViewData.ModelState.ContainsKey("MoTa") && ViewData.ModelState["MoTa"].Errors.Count > 0)
+        {
+            <div class="alert alert-danger">
+                @ViewData.ModelState["MoTa"].Errors[0].ErrorMessage
+            </div>
+        }
+    </div>
+
+    <div class="form-group">
+        <label for="HinhAnh">Hình Ảnh</label>
+        <input type="text" id="HinhAnh" name="HinhAnh" class="form-control" value="@Model.HinhAnh" placeholder="Vui lòng nhập URL hình ảnh hoặc ảnh từ thư mục 'images'..." />
+        @if (ViewData.ModelState.ContainsKey("HinhAnh") && ViewData.ModelState["HinhAnh"].Errors.Count > 0)
+        {
+            <div class="alert alert-danger">
+                @ViewData.ModelState["HinhAnh"].Errors[0].ErrorMessage
+            </div>
+        }
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-success">💾 Lưu Thay Đổi</button>
+        <a href="@Url.Action("Index", "TrangChu")" class="btn btn-secondary">❌ Hủy</a>
+    </div>
+</form>
